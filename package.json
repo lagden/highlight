@@ -47,7 +47,8 @@
   "files": [
     "index.js",
     "license",
-    "README.md"
+    "README.md",
+    "dist"
   ],
   "xo": {
     "envs": [
