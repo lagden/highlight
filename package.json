@@ -1,0 +1,59 @@
+{
+  "name": "lagden-highlight",
+  "version": "1.0.0",
+  "description": "Make the words shine",
+  "keywords": [
+    "highlight",
+    "mark",
+    "word",
+    "text",
+    "shine"
+  ],
+  "bug": {
+    "url": "https://github.com/lagden/highlight",
+    "email": "lagden@gmail.com"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Thiago Lagden",
+    "email": "lagden@gmail.com",
+    "url": "http://lagden.in"
+  },
+  "main": "index.js",
+  "repository": "lagden/highlight",
+  "scripts": {
+    "rollup": "rollup -c",
+    "report": "nyc report --reporter=html",
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
+    "pretest": "xo",
+    "test": "nyc ava"
+  },
+  "dependencies": {
+    "lagden-hex": "1.1.0"
+  },
+  "devDependencies": {
+    "ava": "0.16.0",
+    "coveralls": "2.11.12",
+    "nyc": "8.1.0",
+    "rollup": "0.34.10",
+    "rollup-plugin-buble": "0.13.0",
+    "rollup-plugin-commonjs": "3.3.1",
+    "rollup-plugin-node-resolve": "2.0.0",
+    "xo": "0.16.0"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "files": [
+    "index.js",
+    "license",
+    "README.md"
+  ],
+  "xo": {
+    "envs": [
+      "es6",
+      "node"
+    ],
+    "esnext": true
+  }
+}
