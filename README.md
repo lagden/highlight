@@ -5,8 +5,8 @@
 [![Dependency Status][dep-img]][dep]
 [![devDependency Status][devDep-img]][devDep]
 
-[npm-img]:       https://img.shields.io/npm/v/highlight.svg
-[npm]:           https://www.npmjs.com/package/highlight
+[npm-img]:       https://img.shields.io/npm/v/lagden-highlight.svg
+[npm]:           https://www.npmjs.com/package/lagden-highlight
 [ci-img]:        https://travis-ci.org/lagden/highlight.svg
 [ci]:            https://travis-ci.org/lagden/highlight
 [coveralls-img]: https://coveralls.io/repos/github/lagden/highlight/badge.svg?branch=master
