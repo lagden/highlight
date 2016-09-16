@@ -53,10 +53,13 @@ function highlight(source, q, tpl, split) {
 	if ( split === void 0 ) split = true;
 
 	var words = split ? q.split(' ') : [q];
-	words.forEach(function (word) {
-		var regex = new RegExp(("(" + (encode(word)) + ")"), 'ig');
-		source = source.replace(regex, tpl);
-	});
+	for (var i = 0; i < words.length; i++) {
+		var word = words[i];
+		if (word) {
+			var regex = new RegExp(("(" + (encode(word)) + ")"), 'ig');
+			source = source.replace(regex, tpl);
+		}
+	}
 	return source;
 }
 

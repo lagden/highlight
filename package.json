@@ -26,7 +26,9 @@
     "report": "nyc report --reporter=html",
     "coverage": "nyc report --reporter=text-lcov | coveralls",
     "pretest": "xo",
-    "test": "nyc ava"
+    "test": "nyc ava",
+    "gzip": "find ./dist -name '*.js' -type f -exec sh -c 'gzip -c --best {} > {}.gz' \\;",
+    "build": "npm test && npm run rollup && npm run gzip"
   },
   "dependencies": {
     "lagden-hex": "1.1.0"
