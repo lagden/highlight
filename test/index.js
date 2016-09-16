@@ -1,7 +1,7 @@
 'use strict';
 
 import test from 'ava';
-import highlight from '../';
+import highlight from '../index';
 
 test('Deve retornar o texto com as palavras "Bond" marcadas com a tag <mark>', t => {
 	const source = 'My name is Bond, James Bond...';
