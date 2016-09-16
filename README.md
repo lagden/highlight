@@ -1,9 +1,12 @@
 # Highlight
+[![NPM version][npm-img]][npm]
 [![Build Status][ci-img]][ci]
 [![Coverage Status][coveralls-img]][coveralls]
 [![Dependency Status][dep-img]][dep]
 [![devDependency Status][devDep-img]][devDep]
 
+[npm-img]:       https://img.shields.io/npm/v/highlight.svg
+[npm]:           https://www.npmjs.com/package/highlight
 [ci-img]:        https://travis-ci.org/lagden/highlight.svg
 [ci]:            https://travis-ci.org/lagden/highlight
 [coveralls-img]: https://coveralls.io/repos/github/lagden/highlight/badge.svg?branch=master
@@ -33,37 +36,16 @@ const marked = highlight(source, 'Bond'); // My name is <mark>Bond</mark>, James
 ```
 
 
-## API
+### API
 
-### highlight(source, q, tpl, split)
+#### highlight(source, q, tpl, split)
 
-#### source
-
-*Required*  
-Type: `string`
-
-Your text, expression or phrase
-
-#### q
-
-*Required*  
-Type: `string`
-
-The word you want to shine
-
-#### tpl
-
-Type: `string`  
-Default: `<mark>$1</mark>`
-
-Define a custom template for highlight
-
-#### split
-
-Type: `boolean`  
-Default: `true`
-
-Break the term in pieces
+Name        | Type     | Required | Value   | Description
+----------- | -------- | -------- | ------- | ------------
+source      | `string` | `true`   |         | Your text, expression or phrase
+q           | `string` | `true`   |         | The word you want to shine
+tpl         | `string` | `false`  | `<mark>$1</mark>` | Define a custom template for highlight
+split       | `string` | `false`  | `true`  | Break the term in pieces
 
 
 ## License

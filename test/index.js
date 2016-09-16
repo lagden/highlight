@@ -9,6 +9,12 @@ test('Deve retornar o texto com as palavras "Bond" marcadas com a tag <mark>', t
 	t.is(marked, 'My name is <mark>Bond</mark>, James <mark>Bond</mark>...');
 });
 
+test('Deve retornar o texto com as palavras "Bond" marcadas com a tag <mark> buscando por `Bond `', t => {
+	const source = 'My name is Bond, James Bond...';
+	const marked = highlight(source, 'Bond ');
+	t.is(marked, 'My name is <mark>Bond</mark>, James <mark>Bond</mark>...');
+});
+
 test('Deve retornar o texto com as palavras "Bond" marcadas com a tag <b>', t => {
 	const source = 'My name is Bond, James Bond...';
 	const marked = highlight(source, 'Bond', '<b>$1</b>');
