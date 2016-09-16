@@ -19,7 +19,8 @@
     "email": "lagden@gmail.com",
     "url": "http://lagden.in"
   },
-  "main": "index.js",
+  "main": "dist/index.js",
+  "jsnext:main": "index.js",
   "repository": "lagden/highlight",
   "scripts": {
     "rollup": "rollup -c",
