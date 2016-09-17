@@ -40,12 +40,12 @@ const marked = highlight(source, 'Bond'); // My name is <mark>Bond</mark>, James
 
 #### highlight(source, q, tpl, split)
 
-Name        | Type     | Required | Value   | Description
------------ | -------- | -------- | ------- | ------------
-source      | `string` | `true`   |         | Your text, expression or phrase
-q           | `string` | `true`   |         | The word you want to shine
-tpl         | `string` | `false`  | `<mark>$1</mark>` | Define a custom template for highlight
-split       | `string` | `false`  | `true`  | Break the term in pieces
+Name        | Type     | Required | Default           | Description
+----------- | -------- | -------- | ----------------- | ------------
+source      | string   | yes      |                   | Your text, expression or phrase
+q           | string   | yes      |                   | The word you want to shine
+tpl         | string   | no       | `<mark>$1</mark>` | Define a custom template for highlight
+split       | string   | no       | `true`            | Break the term in pieces
 
 
 ## License
