@@ -37,6 +37,7 @@ const highlight = require('lagden-highlight')
 
 const source = 'My name is Bond, James Bond...'
 const q = 'James Bond'
+
 highlight(source, q)
 // My name is <mark>Bond</mark>, <mark>James</mark> <mark>Bond</mark>...
 
@@ -46,7 +47,8 @@ const source = 'My name is Bond, James Bond...'
 const q = 'James Bond'
 const tpl = '<b>&</b>'
 const split = false
-const marked = highlight(source, q, tpl, split);
+
+highlight(source, q, tpl, split);
 // My name is Bond, <b>James Bond</b>...
 ```
 
