@@ -4,6 +4,7 @@
 [![Coverage Status][coveralls-img]][coveralls]
 [![Dependency Status][dep-img]][dep]
 [![devDependency Status][devDep-img]][devDep]
+[![XO code style][xo-img]][xo]
 
 [npm-img]:       https://img.shields.io/npm/v/lagden-highlight.svg
 [npm]:           https://www.npmjs.com/package/lagden-highlight
@@ -15,6 +16,7 @@
 [dep]:           https://david-dm.org/lagden/highlight
 [devDep-img]:    https://david-dm.org/lagden/highlight/dev-status.svg
 [devDep]:        https://david-dm.org/lagden/highlight#info=devDependencies
+[xo]:            https://github.com/sindresorhus/xo
 
 
 Make the words shine
@@ -30,9 +32,21 @@ $ npm i -S lagden-highlight
 ## Usage
 
 ```js
-const highlight = require('lagden-highlight');
-const source = 'My name is Bond, James Bond...';
-const marked = highlight(source, 'Bond'); // My name is <mark>Bond</mark>, James <mark>Bond</mark>...
+const highlight = require('lagden-highlight')
+
+const source = 'My name is Bond, James Bond...'
+const q = 'James Bond'
+highlight(source, q)
+// My name is <mark>Bond</mark>, <mark>James</mark> <mark>Bond</mark>...
+
+/* or */
+
+const source = 'My name is Bond, James Bond...'
+const q = 'James Bond'
+const tpl = '<b>&</b>'
+const split = false
+const marked = highlight(source, q, tpl, split);
+// My name is Bond, <b>James Bond</b>...
 ```
 
 
@@ -40,12 +54,12 @@ const marked = highlight(source, 'Bond'); // My name is <mark>Bond</mark>, James
 
 #### highlight(source, q, tpl, split)
 
-Name        | Type     | Required | Default           | Description
------------ | -------- | -------- | ----------------- | ------------
-source      | string   | yes      |                   | Your text, expression or phrase
-q           | string   | yes      |                   | The word you want to shine
-tpl         | string   | no       | `<mark>$1</mark>` | Define a custom template for highlight
-split       | string   | no       | `true`            | Break the term in pieces
+Name        | Type      | Required | Default                         | Description
+----------- | --------- | -------- | ------------------------------- | ------------
+source      | string    | yes      |                                 | Your text
+q           | string    | yes      |                                 | The word or term that will shine on text
+tpl         | string    | no       | &lt;mark&gt;$&amp;&lt;/mark&gt; | Custom template
+split       | boolean   | no       | true                            | Break the term in many words
 
 
 ## License

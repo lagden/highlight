@@ -1,6 +1,6 @@
 {
   "name": "lagden-highlight",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Make the words shine",
   "keywords": [
     "highlight",
@@ -32,17 +32,17 @@
     "build": "npm test && npm run rollup && npm run gzip"
   },
   "dependencies": {
-    "lagden-hex": "1.1.0"
+    "lagden-hex": "1.2.0"
   },
   "devDependencies": {
-    "ava": "0.16.0",
-    "coveralls": "2.11.12",
-    "nyc": "8.1.0",
-    "rollup": "0.34.10",
-    "rollup-plugin-buble": "0.13.0",
-    "rollup-plugin-commonjs": "3.3.1",
+    "ava": "0.17.0",
+    "coveralls": "2.11.15",
+    "nyc": "10.0.0",
+    "rollup": "0.36.4",
+    "rollup-plugin-buble": "0.14.0",
+    "rollup-plugin-commonjs": "5.0.5",
     "rollup-plugin-node-resolve": "2.0.0",
-    "xo": "0.16.0"
+    "xo": "0.17.1"
   },
   "engines": {
     "node": ">=6.0.0"
@@ -58,7 +58,8 @@
       "es6",
       "node"
     ],
-    "esnext": true
+    "esnext": true,
+    "semicolon": false
   },
   "ava": {
     "files": [

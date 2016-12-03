@@ -1,18 +1,34 @@
-'use strict';
+'use strict'
 
-const encode = require('lagden-hex').encode;
+const encode = require('lagden-hex').encode
 
-function highlight(source, q, tpl = '<mark>$&</mark>', split = true) {
-	const words = (split ? q.split(' ') : [q]).sort((a, b) => b.length - a.length);
+const spade = '\u2664'
+
+function _mapWords(words) {
+	const map = {}
 	for (let i = 0; i < words.length; i++) {
-		const word = words[i];
+		const word = words[i]
 		if (word) {
-			// const regex = new RegExp(`(\\b${encode(word)})`, 'ig');
-			const regex = new RegExp(`(${encode(word)}+(?![^<>]*>))`, 'ig');
-			source = source.replace(regex, tpl);
+			const n = `${spade}${i}`
+			map[n] = word
 		}
 	}
-	return source;
+	return map
 }
 
-module.exports = highlight;
+function highlight(source, q, tpl = '<mark>$&</mark>', split = true) {
+	const words = (split ? q.split(' ') : [q]).sort((a, b) => b.length - a.length)
+	const map = _mapWords(words)
+	for (let i = 0; i < words.length; i++) {
+		const word = words[i]
+		if (word) {
+			const regex = new RegExp(`(${encode(word)})`, 'ig')
+			const n = `${spade}${i}`
+			source = source.replace(regex, n)
+		}
+	}
+	const regex = new RegExp(`(${spade}[0-9+])`, 'g')
+	return source.replace(regex, m => m.replace(m, tpl).replace(m, map[m]))
+}
+
+module.exports = highlight
