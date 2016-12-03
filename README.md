@@ -16,6 +16,7 @@
 [dep]:           https://david-dm.org/lagden/highlight
 [devDep-img]:    https://david-dm.org/lagden/highlight/dev-status.svg
 [devDep]:        https://david-dm.org/lagden/highlight#info=devDependencies
+[xo-img]:        https://img.shields.io/badge/code_style-XO-5ed9c7.svg
 [xo]:            https://github.com/sindresorhus/xo
 
 
