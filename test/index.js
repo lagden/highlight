@@ -44,3 +44,9 @@ test('Deve retornar o texto original', t => {
 	const marked = highlight(source, 'Sherlock Holmes')
 	t.is(marked, source)
 })
+
+test('[Case sensitive] Deve retornar o texto com as palavras "B" e "b" marcadas com a tag <mark>', t => {
+	const source = 'Hey Brow!! Tudo blz...'
+	const marked = highlight(source, 'b', '<mark>$&</mark>', true, true)
+	t.is(marked, 'Hey <mark>B</mark>row!! Tudo <mark>b</mark>lz...')
+})
