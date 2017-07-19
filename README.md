@@ -46,7 +46,7 @@ highlight(source, q)
 
 ---
 
-Without spliting words
+Without breaking the term into small words
 
 ```js
 const highlight = require('lagden-highlight')
@@ -61,7 +61,7 @@ highlight(source, q, split);
 
 ---
 
-Without spliting words and changing template
+Without breaking the term into small words and changing the template
 
 ```js
 const highlight = require('lagden-highlight')
