@@ -50,18 +50,27 @@ const split = false
 
 highlight(source, q, tpl, split);
 // My name is Bond, <b>James Bond</b>...
+
+/* or */
+
+const source = 'My name is Bond, James Bond...'
+const q = 'James Bond'
+const split = false
+
+highlight(source, q, split);
+// My name is Bond, <mark>James Bond</mark>...
 ```
 
 
 ### API
 
-#### highlight(source, q, tpl, split)
+#### highlight(source, q \[, tpl\] \[, split\])
 
 Name        | Type      | Required | Default                         | Description
 ----------- | --------- | -------- | ------------------------------- | ------------
-source      | string    | yes      |                                 | Your text
-q           | string    | yes      |                                 | The word or term that will shine on text
-tpl         | string    | no       | &lt;mark&gt;$&amp;&lt;/mark&gt; | Custom template
+source      | string    | yes      | -                               | Your text
+q           | string    | yes      | -                               | The term that will be shine
+tpl         | string    | no       | \<mark\>$\&\</mark\>            | Custom template
 split       | boolean   | no       | true                            | Break the term in many words
 
 
