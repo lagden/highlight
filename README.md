@@ -32,6 +32,8 @@ $ npm i -S lagden-highlight
 
 ## Usage
 
+Basic usage
+
 ```js
 const highlight = require('lagden-highlight')
 
@@ -40,8 +42,29 @@ const q = 'James Bond'
 
 highlight(source, q)
 // My name is <mark>Bond</mark>, <mark>James</mark> <mark>Bond</mark>...
+```
 
-/* or */
+---
+
+Without spliting words
+
+```js
+const highlight = require('lagden-highlight')
+
+const source = 'My name is Bond, James Bond...'
+const q = 'James Bond'
+const split = false
+
+highlight(source, q, split);
+// My name is Bond, <mark>James Bond</mark>...
+```
+
+---
+
+Without spliting words and changing template
+
+```js
+const highlight = require('lagden-highlight')
 
 const source = 'My name is Bond, James Bond...'
 const q = 'James Bond'
@@ -50,15 +73,6 @@ const split = false
 
 highlight(source, q, tpl, split);
 // My name is Bond, <b>James Bond</b>...
-
-/* or */
-
-const source = 'My name is Bond, James Bond...'
-const q = 'James Bond'
-const split = false
-
-highlight(source, q, split);
-// My name is Bond, <mark>James Bond</mark>...
 ```
 
 

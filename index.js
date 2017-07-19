@@ -7,10 +7,11 @@ function onlyUnique(value, index, arr) {
 }
 
 function highlight(...args) {
-	let [source, q, tpl = '<mark>$&</mark>', split = true] = args
+	const _tpl = '<mark>$&</mark>'
+	let [source, q, tpl = _tpl, split = true] = args
 	if (typeof tpl === 'boolean') {
 		split = tpl
-		tpl = '<mark>$&</mark>'
+		tpl = _tpl
 	}
 
 	const words = (split ? q.split(' ') : [q])
