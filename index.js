@@ -28,8 +28,10 @@ function highlight(source, q, tpl = '<mark>$&</mark>', split = true) {
 			}
 		}
 	}
-	const regex = new RegExp(`(${spade}[0-9+])`, 'g')
-	const result = source.replace(regex, m => m.replace(m, tpl).replace(m, map[m]))
+	const result = Object.keys(map).reverse().reduce(
+		(memo, key) => memo.replace(new RegExp(key, 'g'), tpl.replace('$&', map[key])),
+		source
+	)
 	words = null
 	map = null
 	unique = null
