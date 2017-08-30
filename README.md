@@ -55,7 +55,7 @@ const source = 'My name is Bond, James Bond...'
 const q = 'James Bond'
 const split = false
 
-highlight(source, q, split);
+highlight(source, q, {split});
 // My name is Bond, <mark>James Bond</mark>...
 ```
 
@@ -71,21 +71,29 @@ const q = 'James Bond'
 const tpl = '<b>&</b>'
 const split = false
 
-highlight(source, q, tpl, split);
+highlight({source, q, {tpl, split});
 // My name is Bond, <b>James Bond</b>...
 ```
 
 
 ### API
 
-#### highlight(source, q \[, tpl\] \[, split\])
+#### highlight(source, q \[, options\])
 
 Name        | Type      | Required | Default                         | Description
 ----------- | --------- | -------- | ------------------------------- | ------------
 source      | string    | yes      | -                               | Your text
 q           | string    | yes      | -                               | The term that will be shine
-tpl         | string    | no       | \<mark\>$\&\</mark\>            | Custom template
-split       | boolean   | no       | true                            | Break the term in many words
+options     | object    | no       | [see below](#options)           | Options
+
+
+##### options
+
+Name          | Type      | Required | Default                         | Description
+-----------   | --------- | -------- | ------------------------------- | ------------
+tpl           | string    | no       | \<mark\>$\&\</mark\>            | Custom template
+split         | boolean   | no       | true                            | Break the term in many words
+caseSensitive | boolean   | no       | true                            | The words can differ in meaning
 
 
 ## License

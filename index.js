@@ -6,21 +6,15 @@ function onlyUnique(value, index, arr) {
 	return arr.indexOf(value) === index && value
 }
 
-function highlight(...args) {
-	const _tpl = '<mark>$&</mark>'
-	let [source, q, tpl = _tpl, split = true] = args
-	if (typeof tpl === 'boolean') {
-		split = tpl
-		tpl = _tpl
-	}
-
+function highlight(source, q, options = {}) {
+	const {tpl = '<mark>$&</mark>', split = true, caseSensitive = true} = options
 	const words = (split ? q.split(' ') : [q])
 		.map(word => word.trim())
 		.filter(onlyUnique)
 		.sort((a, b) => b.length - a.length)
 		.map(word => encode(word))
 
-	const regex = new RegExp(`${words.join('|')}`, 'g')
+	const regex = new RegExp(`${words.join('|')}`, caseSensitive ? 'g' : 'ig')
 	return source.replace(regex, tpl)
 }
 
