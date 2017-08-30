@@ -77,7 +77,7 @@ highlight(source, q, {tpl, split});
 
 ---
 
-Case sensitive
+Ignoring case sensitive
 
 ```js
 const highlight = require('lagden-highlight')
