@@ -71,14 +71,30 @@ const q = 'James Bond'
 const tpl = '<b>&</b>'
 const split = false
 
-highlight({source, q, {tpl, split});
+highlight(source, q, {tpl, split});
 // My name is Bond, <b>James Bond</b>...
 ```
 
+---
 
-### API
+Case sensitive
 
-#### highlight(source, q \[, options\])
+```js
+const highlight = require('lagden-highlight')
+
+const source = 'What a wonderful phrase'
+const q = 'w'
+const tpl = '<b>&</b>'
+const caseSensitive = false
+
+highlight(source, q, {tpl, caseSensitive});
+// <b>W</b>hat a <b>w</b>onderful phrase
+```
+
+
+## API
+
+### highlight(source, q \[, options\])
 
 Name        | Type      | Required | Default                         | Description
 ----------- | --------- | -------- | ------------------------------- | ------------
@@ -87,7 +103,7 @@ q           | string    | yes      | -                               | The term 
 options     | object    | no       | [see below](#options)           | Options
 
 
-##### options
+#### options
 
 Name          | Type      | Required | Default                         | Description
 -----------   | --------- | -------- | ------------------------------- | ------------
