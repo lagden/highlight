@@ -11,6 +11,7 @@
 
 
 [greenkeeper-img]: https://badges.greenkeeper.io/lagden/koa-error.svg
+[greenkeeper]:     https://greenkeeper.io/
 [npm-img]:         https://img.shields.io/npm/v/lagden-highlight.svg
 [npm]:             https://www.npmjs.com/package/lagden-highlight
 [ci-img]:          https://travis-ci.org/lagden/highlight.svg
