@@ -2,7 +2,7 @@
 
 import {encode} from 'lagden-hex'
 
-function onlyUnique(value, index, arr) {
+function unique(value, index, arr) {
 	return arr.indexOf(value) === index && value
 }
 
@@ -10,7 +10,7 @@ function highlight(source, q, options = {}) {
 	const {tpl = '<mark>$&</mark>', split = true, caseSensitive = true} = options
 	const words = (split ? q.split(' ') : [q])
 		.map(word => word.trim())
-		.filter(onlyUnique)
+		.filter(unique)
 		.sort((a, b) => b.length - a.length)
 		.map(word => encode(word))
 
