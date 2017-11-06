@@ -10,8 +10,6 @@
 [![Greenkeeper badge][greenkeeper-img]][greenkeeper]
 
 
-[greenkeeper-img]: https://badges.greenkeeper.io/lagden/koa-error.svg
-[greenkeeper]:     https://greenkeeper.io/
 [npm-img]:         https://img.shields.io/npm/v/lagden-highlight.svg
 [npm]:             https://www.npmjs.com/package/lagden-highlight
 [ci-img]:          https://travis-ci.org/lagden/highlight.svg
@@ -24,6 +22,8 @@
 [devDep]:          https://david-dm.org/lagden/highlight#info=devDependencies
 [xo-img]:          https://img.shields.io/badge/code_style-XO-5ed9c7.svg
 [xo]:              https://github.com/sindresorhus/xo
+[greenkeeper-img]: https://badges.greenkeeper.io/lagden/highlight.svg
+[greenkeeper]:     https://greenkeeper.io/
 
 
 Make the words shine
