@@ -39,7 +39,7 @@
     "coveralls": "2.13.2",
     "lagden-hex": "3.0.0",
     "nyc": "11.3.0",
-    "rollup": "0.51.4",
+    "rollup": "0.51.6",
     "rollup-plugin-buble": "0.17.0",
     "rollup-plugin-node-resolve": "3.0.0",
     "xo": "0.18.2"
