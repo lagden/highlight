@@ -41,7 +41,7 @@
     "nyc": "11.6.0",
     "rollup": "0.56.4",
     "rollup-plugin-buble": "0.19.0",
-    "rollup-plugin-node-resolve": "3.1.0",
+    "rollup-plugin-node-resolve": "3.4.0",
     "xo": "0.20.3"
   },
   "engines": {
