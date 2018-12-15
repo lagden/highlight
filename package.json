@@ -33,7 +33,7 @@
     "build": "npm run rollup && npm run gzip"
   },
   "devDependencies": {
-    "ava": "0.25.0",
+    "ava": "1.0.1",
     "babel-preset-es2015": "6.24.1",
     "babel-preset-es2015-rollup": "3.0.0",
     "coveralls": "3.0.1",
