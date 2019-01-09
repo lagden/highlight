@@ -1,20 +1,15 @@
 'use strict'
 
-import buble from 'rollup-plugin-buble'
-import nodeResolve from 'rollup-plugin-node-resolve'
+import babel from 'rollup-plugin-babel'
 
 export default {
-	input: 'index.js',
+	input: 'index.mjs',
 	output: {
+		name: 'highlight',
 		file: 'dist/index.js',
 		format: 'umd'
 	},
-	name: 'highlight',
 	plugins: [
-		nodeResolve({
-			main: false
-		}),
-		buble()
-	],
-	sourcemap: true
+		babel()
+	]
 }
