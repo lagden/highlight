@@ -74,7 +74,7 @@ const highlight = require('lagden-highlight')
 
 const source = 'My name is Bond, James Bond...'
 const q = 'James Bond'
-const tpl = '<b>&</b>'
+const tpl = '<b>$&</b>'
 const split = false
 
 highlight(source, q, {tpl, split});
@@ -90,7 +90,7 @@ const highlight = require('lagden-highlight')
 
 const source = 'What a wonderful phrase'
 const q = 'w'
-const tpl = '<b>&</b>'
+const tpl = '<b>$&</b>'
 const caseSensitive = false
 
 highlight(source, q, {tpl, caseSensitive});
