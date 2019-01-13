@@ -32,7 +32,7 @@
     "build": "npm run rollup && npm run gzip"
   },
   "devDependencies": {
-    "ava": "1.0.1",
+    "ava": "1.1.0",
     "esm": "3.0.84",
     "rollup": "1.1.0",
     "rollup-plugin-babel": "4.2.0",
