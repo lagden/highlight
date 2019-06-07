@@ -1,6 +1,6 @@
 {
   "name": "lagden-highlight",
-  "version": "4.2.0",
+  "version": "4.3.0",
   "description": "Make the words shine",
   "keywords": [
     "highlight",
@@ -16,8 +16,7 @@
   "license": "MIT",
   "author": {
     "name": "Thiago Lagden",
-    "email": "lagden@gmail.com",
-    "url": "http://lagden.in"
+    "email": "lagden@gmail.com"
   },
   "main": "dist/index.js",
   "repository": "lagden/highlight",
@@ -28,13 +27,13 @@
     "pretest": "xo",
     "test": "ava",
     "gzip": "find ./dist -name '*.js' -type f -exec sh -c 'gzip -c --best {} > {}.gz' \\;",
+    "brotli": "find ./dist -name '*.js' -type f -exec sh -c 'brotli -c --best {} > {}.br' \\;",
     "prebuild": "npm test",
-    "build": "npm run rollup && npm run gzip"
+    "build": "npm run rollup && npm run gzip && npm run brotli"
   },
   "devDependencies": {
-    "ava": "1.2.1",
-    "esm": "3.2.4",
-    "rollup": "1.1.2",
+    "ava": "2.0.0",
+    "rollup": "1.14.3",
     "rollup-plugin-babel": "4.3.2",
     "xo": "0.24.0"
   },
@@ -58,24 +57,11 @@
     }
   },
   "ava": {
-    "require": [
-      "esm"
-    ],
-    "babel": {
-      "testOptions": {
-        "presets": [
-          [
-            "module:ava/stage-4",
-            {
-              "modules": false
-            }
-          ]
-        ]
-      },
-      "extensions": [
-        "js",
-        "mjs"
-      ]
-    }
+    "require": "esm",
+    "babel": false,
+    "extensions": [
+      "js",
+      "mjs"
+    ]
   }
 }

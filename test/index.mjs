@@ -1,7 +1,8 @@
+/* eslint import/extensions: 0 */
 'use strict'
 
 import test from 'ava'
-import highlight from '..'
+import highlight from '../src/index.mjs'
 
 test('Deve retornar o texto com as palavras "Bond" marcadas com a tag <mark> buscando por `Bond `', t => {
 	const source = 'My name is Bond, James Bond...'

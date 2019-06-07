@@ -3,7 +3,7 @@
 import babel from 'rollup-plugin-babel'
 
 export default {
-	input: 'index.mjs',
+	input: 'src/index.mjs',
 	output: {
 		name: 'highlight',
 		file: 'dist/index.js',
