@@ -1,6 +1,6 @@
 {
   "name": "lagden-highlight",
-  "version": "4.3.0",
+  "version": "4.3.1",
   "description": "Make the words shine",
   "keywords": [
     "highlight",
@@ -41,7 +41,7 @@
     "node": ">=8.5.0"
   },
   "files": [
-    "index.mjs",
+    "src",
     "license",
     "README.md",
     "dist"
