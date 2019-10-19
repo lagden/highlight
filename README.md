@@ -10,8 +10,6 @@
 [![Greenkeeper badge][greenkeeper-img]][greenkeeper]
 
 
-[npm-img]:         https://img.shields.io/npm/v/lagden-highlight.svg
-[npm]:             https://www.npmjs.com/package/lagden-highlight
 [ci-img]:          https://travis-ci.org/lagden/highlight.svg
 [ci]:              https://travis-ci.org/lagden/highlight
 [coveralls-img]:   https://coveralls.io/repos/github/lagden/highlight/badge.svg?branch=master
@@ -41,7 +39,7 @@ $ npm i -S lagden-highlight
 Basic usage
 
 ```js
-const highlight = require('lagden-highlight')
+const highlight = require('@lagden/highlight')
 
 const source = 'My name is Bond, James Bond...'
 const q = 'James Bond'
@@ -55,7 +53,7 @@ highlight(source, q)
 Without breaking the term into small words
 
 ```js
-const highlight = require('lagden-highlight')
+const highlight = require('@lagden/highlight')
 
 const source = 'My name is Bond, James Bond...'
 const q = 'James Bond'
@@ -70,7 +68,7 @@ highlight(source, q, {split});
 Without breaking the term into small words and changing the template
 
 ```js
-const highlight = require('lagden-highlight')
+const highlight = require('@lagden/highlight')
 
 const source = 'My name is Bond, James Bond...'
 const q = 'James Bond'
@@ -86,7 +84,7 @@ highlight(source, q, {tpl, split});
 Ignoring case sensitive
 
 ```js
-const highlight = require('lagden-highlight')
+const highlight = require('@lagden/highlight')
 
 const source = 'What a wonderful phrase'
 const q = 'w'

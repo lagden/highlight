@@ -1,6 +1,6 @@
 {
-  "name": "lagden-highlight",
-  "version": "4.3.1",
+  "name": "@lagden/highlight",
+  "version": "1.0.0",
   "description": "Make the words shine",
   "keywords": [
     "highlight",
@@ -63,5 +63,8 @@
       "js",
       "mjs"
     ]
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   }
 }
