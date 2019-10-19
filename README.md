@@ -115,7 +115,7 @@ Name          | Type      | Required | Default                         | Descrip
 -----------   | --------- | -------- | ------------------------------- | ------------
 tpl           | string    | no       | \<mark\>$\&\</mark\>            | Custom template
 split         | boolean   | no       | true                            | Break the term in many words
-caseSensitive | boolean   | no       | true                            | The words can differ in meaning
+caseSensitive | boolean   | no       | true                            | Defines whether letters are treated as distinct
 
 
 ## License
