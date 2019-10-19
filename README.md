@@ -1,7 +1,5 @@
 # Highlight
 
-[![NPM version][npm-img]][npm]
-[![Build Status][ci-img]][ci]
 <!-- [![Coverage Status][coveralls-img]][coveralls] -->
 [![Dependency Status][dep-img]][dep]
 [![devDependency Status][devDep-img]][devDep]
@@ -30,7 +28,7 @@ Make the words shine
 ## Install
 
 ```
-$ npm i -S lagden-highlight
+$ npm i -S @lagden/highlight
 ```
 
 
