@@ -1,6 +1,6 @@
 {
   "name": "@lagden/highlight",
-  "version": "1.0.0",
+  "version": "5.0.0",
   "description": "Make the words shine",
   "keywords": [
     "highlight",
@@ -32,9 +32,11 @@
     "build": "npm run rollup && npm run gzip && npm run brotli"
   },
   "devDependencies": {
+    "@tadashi/hex": "1.0.0",
     "ava": "2.4.0",
-    "rollup": "1.25.0",
+    "rollup": "1.27.13",
     "rollup-plugin-babel": "4.3.3",
+    "rollup-plugin-node-resolve": "5.2.0",
     "xo": "0.25.3"
   },
   "engines": {
