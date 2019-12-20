@@ -1,5 +1,5 @@
 {
-  "name": "@lagden/highlight",
+  "name": "@tadashi/highlight",
   "version": "5.0.0",
   "description": "Make the words shine",
   "keywords": [
@@ -65,8 +65,5 @@
       "js",
       "mjs"
     ]
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
   }
 }

@@ -12,10 +12,10 @@
 [ci]:              https://travis-ci.org/lagden/highlight
 [coveralls-img]:   https://coveralls.io/repos/github/lagden/highlight/badge.svg?branch=master
 [coveralls]:       https://coveralls.io/github/lagden/highlight?branch=master
-[dep-img]:         https://david-dm.org/lagden/highlight.svg
-[dep]:             https://david-dm.org/lagden/highlight
-[devDep-img]:      https://david-dm.org/lagden/highlight/dev-status.svg
-[devDep]:          https://david-dm.org/lagden/highlight#info=devDependencies
+[dep-img]:         https://david-dm.org/@tadashi/highlight.svg
+[dep]:             https://david-dm.org/@tadashi/highlight
+[devDep-img]:      https://david-dm.org/@tadashi/highlight/dev-status.svg
+[devDep]:          https://david-dm.org/@tadashi/highlight#info=devDependencies
 [xo-img]:          https://img.shields.io/badge/code_style-XO-5ed9c7.svg
 [xo]:              https://github.com/sindresorhus/xo
 [greenkeeper-img]: https://badges.greenkeeper.io/lagden/highlight.svg
@@ -28,7 +28,7 @@ Make the words shine
 ## Install
 
 ```
-$ npm i -S @lagden/highlight
+$ npm i -S @tadashi/highlight
 ```
 
 
