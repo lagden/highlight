@@ -37,7 +37,7 @@ $ npm i -S @tadashi/highlight
 Basic usage
 
 ```js
-const highlight = require('@lagden/highlight')
+const highlight = require('@tadashi/highlight')
 
 const source = 'My name is Bond, James Bond...'
 const q = 'James Bond'
@@ -51,7 +51,7 @@ highlight(source, q)
 Without breaking the term into small words
 
 ```js
-const highlight = require('@lagden/highlight')
+const highlight = require('@tadashi/highlight')
 
 const source = 'My name is Bond, James Bond...'
 const q = 'James Bond'
@@ -66,7 +66,7 @@ highlight(source, q, {split});
 Without breaking the term into small words and changing the template
 
 ```js
-const highlight = require('@lagden/highlight')
+const highlight = require('@tadashi/highlight')
 
 const source = 'My name is Bond, James Bond...'
 const q = 'James Bond'
@@ -82,7 +82,7 @@ highlight(source, q, {tpl, split});
 Ignoring case sensitive
 
 ```js
-const highlight = require('@lagden/highlight')
+const highlight = require('@tadashi/highlight')
 
 const source = 'What a wonderful phrase'
 const q = 'w'
