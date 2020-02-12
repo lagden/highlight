@@ -37,7 +37,7 @@
     "rollup": "1.27.13",
     "rollup-plugin-babel": "4.3.3",
     "rollup-plugin-node-resolve": "5.2.0",
-    "xo": "0.25.3"
+    "xo": "0.25.4"
   },
   "engines": {
     "node": ">=8.5.0"
