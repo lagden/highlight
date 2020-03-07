@@ -35,7 +35,7 @@
     "@tadashi/hex": "1.0.0",
     "ava": "2.4.0",
     "rollup": "1.27.13",
-    "rollup-plugin-babel": "4.3.3",
+    "rollup-plugin-babel": "4.4.0",
     "rollup-plugin-node-resolve": "5.2.0",
     "xo": "0.25.3"
   },
