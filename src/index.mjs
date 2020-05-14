@@ -1,6 +1,6 @@
 'use strict'
 
-import {encode} from '@tadashi/hex/dist/index.es'
+import {encode} from '@tadashi/hex/dist/index.mjs'
 
 function highlight(source, q, options = {}) {
 	const {tpl = '<mark>$&</mark>', split = true, caseSensitive = true} = options
