@@ -3,7 +3,7 @@
 import babel from '@rollup/plugin-babel'
 import resolve from '@rollup/plugin-node-resolve'
 
-export default {
+const config = {
 	input: 'src/index.mjs',
 	output: {
 		name: 'highlight',
@@ -17,3 +17,5 @@ export default {
 		babel()
 	]
 }
+
+export default config
